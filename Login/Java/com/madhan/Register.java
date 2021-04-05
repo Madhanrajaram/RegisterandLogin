@@ -42,6 +42,11 @@ public class Register extends HttpServlet {
 		Userdb ud=new Userdb();
 		String result=ud.insert(u);
 		out.println(result);
+		out.println("<html><body>");
+		out.println("<br><br><br>");
+		out.println("<form action=index.jsp method=post>");
+		out.println("<input type=submit value= BacktoLoginpage>");
+		out.println("</form></body></html>");
 	}
 
 }
